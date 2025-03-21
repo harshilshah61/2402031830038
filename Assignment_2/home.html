@@ -1,0 +1,405 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneFustion</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .foneFusion-logo {
+      width: 250px;
+      height: auto;
+      display: block;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      font-size: 24px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 9999px;
+      padding: 8px 16px 8px 40px;
+      width: 400px;
+      border: none;
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      /* Adjust position */
+      color: #888;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .navbar {
+      color: black;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      /* Remove underline */
+      color: black;
+      /* Text color */
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: color 0.3s;
+    }
+
+    .nav-link i {
+      font-size: 15px;
+      /* Icon size */
+      margin-bottom: 5px;
+    }
+
+    .nav-link:hover {
+      color: #ff6600;
+      /* Hover color */
+    }
+
+    .banner {
+      margin: 0 auto;
+      border-radius: 10px;
+      ;
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      height: 200px;
+      background: url("https://images.samsung.com/in/smartphones/galaxy-s25-ultra/images/galaxy-s25-ultra-features-kv.jpg?imbypass=true") no-repeat center center/cover;
+      object-fit: cover;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .category-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 5%;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 5%;
+      justify-content: center;
+    }
+
+    .product {
+      background: white;
+      width: 220px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .product button {
+      background-color: #14213D;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .product button:hover {
+      background-color: #e65c00;
+
+      .footer {
+        background-color: #FFF3E0;
+        /* Soft background */
+        color: #333;
+        padding: 30px 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 40px;
+      }
+    }
+
+    .footer {
+      background-color:#EAE7DC; 
+      /* Soft background */
+      color: #333;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      font-size: 18px;;
+      /* Matching hover color */
+      margin-bottom: 10px;
+    }
+
+    .footer-section a {
+      display: block;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 6px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .footer-section a:hover {
+      color: #FF6600;
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 18px;
+      color: #555;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover {
+      color: #FF6600;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+  <main>
+    <header>
+      <div class="logo">
+        <img src="/images/image-removebg-preview (3).png" alt="PhoneFustion logo" class="foneFusion-logo" />
+      </div>
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search..." />
+        <i class="fa fa-search search-icon"></i>
+      </div>
+
+      <div class="navbar">
+        <a href="home.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="cart.html" class="nav-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+        </a>
+        <a href="login.html" class="nav-link">
+          <i class="fas fa-user"></i>
+          <span>Login</span>
+        </a>
+      </div>
+    </header>
+    <div class="banner"></div>
+    <h2 class="category-title">Category</h2>
+
+    <section class="product-container">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71rs4Aer71L._AC_UF1000,1000_QL80_.jpg"
+          alt="samsung" />
+        <h3>Samsung</h3>
+
+      </div>
+
+      <div class="product">
+        <img src="https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/article/Apple-iPhone-16-Pro-hero-240909_inline.jpg.large.jpg"
+          alt="iphone " />
+        <h3>Iphone</h3>
+
+      </div>
+
+
+      <div class="product">
+        <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1740479513531/zip/img/wap/vivo-v50-with-zeiss-professional-portrait-flagship.png"
+          alt="vivo" />
+        <h3>Vivo</h3>
+
+      </div>
+
+      <div class="product">
+        <img src="https://image01-in.oneplus.net/media/202412/17/052a246708df8233d079b3502aeeb327.png"
+          alt="oneplus" />
+        <h3>oneplus</h3>
+
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7A2UFXX0oKpWWe1Se50TzuJfBrpKYmu7Vg&s"
+          alt="moto" />
+        <h3>motorola</h3>
+
+      </div>
+    </section>
+  <br>
+    <section class="product-container">
+      <div class="product">
+        <img src="https://i05.appmifile.com/626_item_uk/24/02/2025/f16b71145c80674ab6d5b9d59403ac2b.png"
+          alt="mi" />
+        <h3>xiaomi</h3>
+      
+
+      </div>
+
+      <div class="product">
+        <img src="https://cdn.shopify.com/s/files/1/1398/4647/files/2_3f2899f4-7149-4457-adfa-e847c87c5a76.jpg?v=1720774132"
+          alt="oppo " />
+        <h3>Oppo</h3>
+       
+
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LWnsp5dz4ZnSF2A-SAkIyxILkw4s7Klb7ZqWZvfIS9UCQQK11_4crXY4gbg6PLS08Qw&usqp=CAU"
+          alt="poco" />
+        <h3>Poco</h3>
+    
+
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkSQWqcAB0g_Dnm0RdsP4mfRLSevV_ERpWQ&s"
+          alt="Cases" />
+        <h3>Cases</h3>
+       
+
+      </div>
+
+      <div class="product">
+        <img src="data:image/jpeg;base64,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TQyNjc1rRqA/M7b7VFZCIigIiICIiAiIgIiICEIiCAZWeS2kqS6SnIpJTpIa28Dz1t+T3aOpcrx3yfYhTE58D5GD/FgvKy2820tHaAvpNEHyKaTrHYdC85i7eOK+sqmghk+Miik+vGx/tCw35NUB10dGe2mhP9Ktj5Z5i7eOK85i7eOK+pfNbDvmVF91g91PNbDvmVF91g91LHy1zF28cU5i7eOK+pfNfD/mVF91g91PNfD/AJlRfdYPdSx8tcxdvHFOYu3jivqXzXw/5lRfdYPdTzXw/wCZUX3WD3UsfLXMXbxxXvMXbxxX1J5rYd8yovusHup5rYd8yovusHupY+W+Yu3jinNLa3BfUrcmcPGqioh2U0PurLp8Mp4zeOGGM72RMafAJY+b8EyHr6ojkaeTNNvhZBycVt4c61+666hkr5JYIS2SscKl408i24gB6zrf4DeCulolimKNrWhrQGtaAGtaAGtA1AAagqkRQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQf/9k="
+          alt="Accessories" />
+        <h3>Buds & headphone</h3>
+       
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="home.html">Home</a>
+        <a href="iphone.html">iphone</a>
+        <a href="samsung.html">samsung</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <a href="faq.html">FAQs</a>
+        <a href="returns.html">Return Policy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      &copy; 2025 PhoneFustion | All Rights Reserved
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shopping Cart</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+        }
+
+        .phoneFusion-logo {
+            width: 250px;
+            height: auto;
+            display: block;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            font-size: 24px;
+        }
+
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 9999px;
+            padding: 8px 16px 8px 40px;
+            width: 400px;
+            border: none;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 12px;
+            /* Adjust position */
+            color: #888;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            /* Remove underline */
+            color: black;
+            /* Text color */
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .nav-link i {
+            font-size: 15px;
+            /* Icon size */
+            margin-bottom: 5px;
+        }
+
+        .nav-link:hover {
+            color: #ff6600;
+            /* Hover color */
+        }
+
+        main {
+            padding: 16px;
+        }
+
+        main h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .cart-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .cart-item {
+            display: flex;
+            gap: 16px;
+            padding: 16px;
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+        }
+
+        .cart-item img {
+            width: 96px;
+            height: 96px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+        }
+
+        .cart-item-details h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .cart-item-details p {
+            color: #7a7a7a;
+        }
+
+        .cart-item-details .price-quantity {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .cart-item-details .price-quantity span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .cart-item-details .price-quantity button {
+            border: 1px solid #8b4513;
+            color: #8b4513;
+            padding: 4px 8px;
+            border-radius: 9999px;
+        }
+
+        .price-details {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 32px;
+            padding: 16px;
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+        }
+
+        .price-details h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .price-details .price-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .price-details .total-price {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+
+        .price-details button {
+            width: 100%;
+            margin-top: 16px;
+            padding: 8px;
+            background-color: #1a202c;
+            color: white;
+            border-radius: 8px;
+            border: none;
+        }
+
+
+        .price-details button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <header>
+        <div class="logo">
+            <img src="images/image-removebg-preview (3).png" alt="logo" class="phoneFusion-logo" />
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <i class="fa fa-search search-icon"></i>
+        </div>
+
+        <div class="navbar">
+            <a href="home.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="cart.html" class="nav-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+            </a>
+            <a href="login.html" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>Login</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1>Shoping cart</h1>
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS_VfWMa_JoG7JYYLK_Le5Ok2RnKfMCMFHQNREqdpihYJJKtxEnX2vSU42yx0_YDFL9F5U0MoUXjox57_P0TjD9imTzLkF9Pm1rUlwWn2iMrRu2KryLBod_cQ"
+                    alt="x200" />
+                <div class="cart-item-details">
+                    <h2>Vivo X200 Pro 5G (Cosmos Black, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers</h2>
+                    <p>Color : black</p>
+                    <div class="price-quantity">
+                        <span>₹96000.00</span>
+                        <button>1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="https://images.meesho.com/images/products/62910313/k794l_512.webp"
+                    alt="boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)" />
+                <div class="cart-item-details">
+                    <h2>boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)</h2>
+                    <p>Color : black</p>
+                    <div class="price-quantity">
+                        <span>₹299.00</span>
+                        <button>1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="https://m.media-amazon.com/images/I/61RJcOy1dtL._SL1000_.jpg"
+                    alt="Crosscut Furniture Metal Floor Lamp with 3 Shelves (Brown Jute). LED Bulb Included." />
+                <div class="cart-item-details">
+                    <h2>TheGiftKart Back Cover Case for Vivo X200 Pro 5G | Slim & Lightweight | Ultra-Premium Design | Camera Protection Bump | Fabric Texture Back Case Cover...</h2>
+                    <p>Color : brown</p>
+                    <div class="price-quantity">
+                        <span>₹399.00</span>
+                        <button>1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-details">
+            <h2>Price Details</h2>
+            <div class="price-item">
+                <span>x200 pro</span>
+                <span>₹96000.00</span>
+            </div>
+            <div class="price-item">
+                <span>boAt Bassheads 100</span>
+                <span>₹299.00</span>
+            </div>
+            <div class="price-item">
+                <span>x200 pro case</span>
+                <span>₹399.00</span>
+            </div>
+            <div class="total-price">
+                <span>Total Price</span>
+                <span>₹96700.00</span>
+            </div>
+            <a href="/checkout.html">
+                <button>PLACE ORDER</button>
+            </a>
+
+        </div>
+    </main>
+</body>
+
+</html>

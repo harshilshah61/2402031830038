@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Login Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <style>
+       
+       * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    .fonefusion-logo {
+      width: 250px;
+      height: auto;
+      display: block;
+      padding-bottom: 25px;
+      padding-bottom:50px;
+    }
+        .container {
+            display: flex;
+            width:fit-content;
+            max-width:fit-content;
+            background-color: white;
+            overflow: hidden;
+        }
+        .image-section {
+            display: none;
+            box-shadow: #6b7280 0px 0px 10px 0px;
+        }
+        .mainpng{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .form-section {
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-section .icon {
+            font-size: 2rem;
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+        .form-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4b5563;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .form-section form {
+            width: 100%;
+        }
+        .form-section form .input-group {
+            margin-bottom: 1rem;
+        }
+        .form-section form .input-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            background-color: #fef3c7;
+            color: #4b5563;
+            border: none;
+            outline: none;
+        }
+        .form-section form .forgot-password {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+        }
+        .form-section form .forgot-password a {
+            font-size: 0.875rem;
+            color: #6b7280;
+            text-decoration: none;
+        }
+        .form-section form .forgot-password a:hover {
+            text-decoration: underline;
+        }
+        .login button {
+            width: 50%;
+            padding: 0.75rem;
+            background-color:#1a202c;
+            color: white;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin: 0 auto;
+            display: block;
+        }
+        .form-section form button:hover {
+            background-color:brown;
+        }
+        .login{
+            text-decoration: none;
+        }
+        .form-section .signup {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+            text-align: center;
+        }
+        .form-section .signup a {
+            color: #ef4444;
+            text-decoration: none;
+        }
+        .form-section .signup a:hover {
+            text-decoration: underline;
+        }
+        @media (min-width: 768px) {
+            .container {
+                width: 100%;
+                height: 100vh;
+            }
+            .image-section {
+                display: block;
+                width: 50%;
+            }
+            .form-section {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img class="mainpng" src="https://photos5.appleinsider.com/gallery/55161-121553-iPhone-16-colors-4-xl.jpg" alt="phone" style="width: 100%; height: 100%; object-fit:cover;"/>
+        </div>
+        <div class="form-section">
+            <img src="/images/image-removebg-preview (3).png" alt=" logo" class="fonefusion-logo"/>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Enter your email or phone"/>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Enter your password"/>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot password ?</a>
+                </div>
+                <a href="/home.html"class="login">
+                    <button>Log in </button>
+                </a>
+                
+            </form>
+            <div class="signup">
+                <p>Don’t have an account ? <a href="/signup.html">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

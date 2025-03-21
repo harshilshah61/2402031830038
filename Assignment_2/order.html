@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #FAFAFA;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+      }
+      .phoneFusion-logo {
+        width: 250px;
+        height: auto;
+        display: block;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo i {
+        font-size: 24px;
+      }
+      .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 8px;
+      }
+      
+
+      .navbar {
+        color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none; /* Remove underline */
+            color: black; /* Text color */
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .nav-link i {
+            font-size: 15px; /* Icon size */
+            margin-bottom: 5px;
+        }
+
+        .nav-link:hover {
+            color: #FF6600; /* Hover color */
+        
+        }
+        main {
+            max-width: 800px;
+            margin: 32px auto;
+            padding: 24px;
+        }
+        main h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        main .order-details p {
+            margin-bottom: 8px;
+        }
+        main .order-details strong {
+            font-weight: 700;
+        }
+        main .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+        }
+        main .items-table th, main .items-table td {
+            border: 1px solid #e2e2e2;
+            padding: 8px;
+            text-align: left;
+        }
+        main .items-table th {
+            background-color: #f9f9f9;
+        }
+        main .total-amount {
+            text-align: right;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        main .order-place button {
+            padding: 8px 16px;
+            background-color: #1a202c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        main .order-place{
+            text-align: right;
+            margin-bottom: 24px;
+            font-size:25px;
+        }
+            
+        main .footer-text p {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <header>
+    
+        <div class="logo">
+          <img
+            src="images/image-removebg-preview (3).png"
+            alt="logo"
+            class="phoneFusion-logo"
+          />
+        </div>
+    
+        <div class="navbar">
+          <a href="home.html" class="nav-link">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+          </a>
+          <a href="cart.html" class="nav-link">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Cart</span>
+          </a>
+          <a href="login.html" class="nav-link">
+              <i class="fas fa-user"></i>
+              <span>Login</span>
+          </a>
+      </div>
+          
+        </div>
+      </header>
+    <main>
+        <h1>Order Confirmation</h1>
+        <div class="order-details">
+            <p><strong>Order Id :</strong> 1632-841234-5678</p>
+            <p><strong>Dear [ Shah Harshil ]</strong></p>
+            <p>Thank you for your purchase! We're excited to confirm your order. Below are the details:</p>
+            <p><strong>Order Date :</strong> 01-01-2025</p>
+            <p><strong>Estimated Delivery Date :</strong></p>
+            <p>Friday , January 03, 2025 To Sunday , January 05 , 2025</p>
+            <p><strong>Shipping Address:</strong></p>
+            <p>2, Matru Bangloj, Near Matru Bhumi And near ayothyanagar, New Maninagar, AHMEDABAD, GUJARAT 382449</p>
+        </div>
+        <div class="items-purchased">
+            <h2>Item Purchased :</h2>
+            <table class="items-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>x200 pro</td>
+                        <td>1</td>
+                        <td>₹96000.00</td>
+                    </tr>
+                    <tr>
+                        <td>boAt Bassheads 100</td>
+                        <td>1</td>
+                        <td>₹299.00</td>
+                    </tr>
+                    <tr>
+                        <td>x200 pro case</td>
+                        <td>1</td>
+                        <td>₹399.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-amount">
+            <p>Total Amount : ₹96,730.00</p>
+            
+        </div>
+        <div class="order-place">
+            <button>order place</button>
+        </div>
+        <div class="footer-text">
+            <p>You can track your order status and find more details by logging into your account on our website. If you have any questions or need assistance, please don't hesitate to contact our customer support.</p>
+            <p>Thank you for choosing FoneFusion. We look forward to serving you again!</p>
+        </div>
+    </main>
+</body>
+</html>

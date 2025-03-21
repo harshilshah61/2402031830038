@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iphone</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .foneFusion-logo {
+      width: 250px;
+      height: auto;
+      display: block;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      font-size: 24px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 9999px;
+      padding: 8px 16px 8px 40px;
+      width: 400px;
+      border: none;
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      /* Adjust position */
+      color: #888;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .navbar {
+      color: black;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      /* Remove underline */
+      color: black;
+      /* Text color */
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: color 0.3s;
+    }
+
+    .nav-link i {
+      font-size: 15px;
+      /* Icon size */
+      margin-bottom: 5px;
+    }
+
+    .nav-link:hover {
+      color: #ff6600;
+      /* Hover color */
+    }
+
+    .banner {
+      margin: 0 auto;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      height: 200px;
+      background: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/f3832e180145769.6505ae76214ca.jpg") no-repeat center center/cover;
+      object-fit: cover;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Product Section */
+    .category-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 5%;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 5%;
+      justify-content: center;
+    }
+
+    .product {
+      background: white;
+      width: 220px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .product button {
+      background-color: #14213d;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .product button:hover {
+      background-color: #e65c00;
+    }
+
+    .footer {
+      background-color: #EAE7DC;
+      /* Soft background */
+      color: #333;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .footer-section a {
+      display: block;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 6px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .footer-section a:hover {
+      color: #FF6600;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 18px;
+      color: #555;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover {
+      color: #FF6600;
+    }
+
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+
+    <header>
+      <div class="logo">
+        <img src="/images/image-removebg-preview (3).png" alt="logo" class="foneFusion-logo" />
+      </div>
+      <div class="search-box">
+        <input type="text" class="search-input" placeholder="Search..." />
+        <i class="fa fa-search search-icon"></i>
+      </div>
+
+      <div class="navbar">
+        <a href="home.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="cart.html" class="nav-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+        </a>
+        <a href="login.html" class="nav-link">
+          <i class="fas fa-user"></i>
+          <span>Login</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="banner"></div>
+    <h2 class="category-title">Top Picks</h2>
+
+    <section class="product-container">
+      <div class="product">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTp9IJ9z_yOfPR0MW55eljdu9ywZjakJnj9sy5pOK2X_bYx8w8sDfX1HXAmA-muWK_7wJe4jHhzaQIGzGK--0Gjl4buEWuGmqqbYjMxdihTLBCy23NURXYc" alt="14" />
+        <h3>iphone 14</h3>
+        <p>Start from 50999.00</p>
+        <button>Check out</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQrYQgB94s46WW3k2waqKSriuV-vb1usqZM51bwLcoRQqXjoSlP9oZTQXGV4SATfywDEU2AyzzDW-va0N3r-hGMo9d0r73tGR0S2JF8UiTHVPhJzWkLMChW"
+          alt=" 15" />
+        <h3>iphone 15</h3>
+        <p>Start from 60999.00</p>
+        <button>check out</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSljOswuC29aqs_bDA7-Ce_64fLbOVM8GefDMhG08caZu07seWX_0y5pfhjrQhRHt7rS2qVPcxmK3L8MrNG3J8gYnfgOKU0Cr4PszsO1SsZTnEc6A4oqApS"
+          alt="16" />
+        <h3>iphone 16</h3>
+        <p>Start from 70999.00</p>
+        <button>check out</button>
+      </div>
+
+      <div class="product">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQQ6mzjCtcZmeSstQXbXH9FLqJisg5Y8c7hSxFjXFTHD49iYbAFUFe8j-4fJJeAL2O7Pa2Nw1XRiXDX_YvsBe0tt560Ck0wErVX87nsgrxPvSPvCMNbI7IF"
+          alt="16e" />
+        <h3>16e</h3>
+        <p>Start from 56999.00</p>
+        <button>check out</button>
+      </div>
+
+      
+      <footer class="footer">
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="home.html">Home</a>
+            <a href="iphone.html">iphone</a>
+            <a href="samsung.html">samsung</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="footer-section">
+            <h3>Customer Service</h3>
+            <a href="faq.html">FAQs</a>
+            <a href="returns.html">Return Policy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </div>
+
+          <!-- Social Media -->
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          &copy; 2025 FoneFustion | All Rights Reserved
+        </div>
+      </footer>
+  </main>
+</body>
+
+</html>

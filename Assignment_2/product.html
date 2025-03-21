@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #FAFAFA;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+      }
+      .phoneFusion-logo {
+        width: 250px;
+        height: auto;
+        display: block;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo i {
+        font-size: 24px;
+      }
+      .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 8px;
+      }
+      .search-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-input {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 9999px;
+        padding: 8px 16px 8px 40px;
+        width: 400px;
+        border: none;
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 12px; /* Adjust position */
+        color: #888;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .navbar {
+        color: black;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: black; 
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .nav-link i {
+            font-size: 15px; /* Icon size */
+            margin-bottom: 5px;
+        }
+
+        .nav-link:hover {
+            color: #FF6600; /* Hover color */
+        
+        }
+        main {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        main .product-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+        main .product-section .thumbnails {
+            display: flex;
+            gap: 16px;
+           
+        }
+        main .product-section .thumbnails img {
+            width: 48px;
+            height: 48px;
+            border-radius:10px;
+        }
+        main .product-section .main-image {
+            width: 200px;
+            height: 200px;
+        }
+        main .product-section .price {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        main .product-section .buttons {
+            display: flex;
+            gap: 16px;
+        }
+        main .product-section .buttons button {
+            padding: 8px 16px;
+            border-radius: 9999px;
+            border: 1px solid #e5e7eb;
+        }
+        main .product-section .buttons .buy-now {
+            background-color: #1a202c;
+            color: white;
+
+       
+        }
+        main .product-details {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        main .product-details h1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        main .product-details .price {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        main .product-details .coupons,
+        main .product-details .information {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        main .product-details .coupons h2,
+        main .product-details .information h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        main .product-details .coupons hr,
+        main .product-details .information hr {
+            border: 0;
+            border-top: 1px solid #e5e7eb;
+        }
+        main .product-details .information .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        
+         .buttons  button:hover {
+            background-color: #FF6600;
+         }
+
+         main .product-section .buttons .buy-now:hover {
+            background-color: #FF6600;
+         }
+    </style>
+</head>
+<body>
+    <main>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+       
+  <header>
+    <div class="logo">
+      <img
+        src="images/image-removebg-preview (3).png"
+        alt="logo"
+        class="phoneFusion-logo"
+      />
+    </div>
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <i class="fa fa-search search-icon"></i>
+    </div>
+
+    <div class="navbar">
+      <a href="home.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+      </a>
+      <a href="cart.html" class="nav-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+      </a>
+      <a href="login.html" class="nav-link">
+          <i class="fas fa-user"></i>
+          <span>Login</span>
+      </a>
+  </div>
+      
+    </div>
+  </header>
+        <section class="product-section">
+            <div class="thumbnails">
+                <img src="https://m.media-amazon.com/images/I/71NKiVg5mZL._SL1500_.jpg" alt="Product thumbnail 1">
+                <img src="https://m.media-amazon.com/images/I/71EmDLvU5vL._SL1500_.jpg" alt="Product thumbnail 2">
+                <img src="https://m.media-amazon.com/images/I/71pg--CN6VL._SL1500_.jpg" alt="Product thumbnail 3">
+            </div>
+            <img src="https://m.media-amazon.com/images/I/71NKiVg5mZL._SL1500_.jpg" alt="Lifelong PVC Hex Dumbbells" class="main-image">
+            <p class="price">₹96000.00</p>
+            <div class="buttons">
+               <a href="cart.html"> <button>Add to Cart</button></a>
+               <a href="order.html"> <button class="buy-now">Buy Now</button></a>
+            </div>
+        </section>
+        <section class="product-details">
+            <h1>
+                Vivo X200 Pro 5G (Cosmos Black, 16GB RAM, 512GB Storage) with No Cost EMI/Additional Exchange Offers</h1>
+            <p class="price">₹96000.00</p>
+            <div class="coupons">
+                <h2>Coupons & Offers</h2>
+                <hr>
+                <p>Get flat 10% discount with SBI Bank debit cards</p>
+                <p>Get flat 12% discount with Select Kotak Bank Credit Card</p>
+            </div>
+            <div class="information">
+                <h2>Information</h2>
+                <hr>
+                <div class="info-grid">
+                    <p>Ram</p>
+                    <p>16 GB</p>
+                    <p>battery</p>
+                    <p>6000 mah</p>
+                    <p>Colour</p>
+                    <p>Black</p>
+                    <p>Processor</p>
+                    <p>Dimensity 9400</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

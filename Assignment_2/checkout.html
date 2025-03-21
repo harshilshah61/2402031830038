@@ -1,0 +1,244 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Checkout
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .phoneFusion-logo {
+      width: 250px;
+      height: auto;
+      display: block;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      font-size: 24px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+
+    .navbar {
+      color: black;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      /* Remove underline */
+      color: black;
+      /* Text color */
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: color 0.3s;
+    }
+
+    .nav-link i {
+      font-size: 15px;
+      /* Icon size */
+      margin-bottom: 5px;
+    }
+
+    .nav-link:hover {
+      color: #ff6600;
+      /* Hover color */
+    }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        @media (min-width: 768px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .card .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .card .title span {
+            font-weight: bold;
+        }
+        .card .title .change {
+            color: #a0522d;
+        }
+        .card p {
+            margin: 0;
+        }
+        .payment-methods img {
+            width: 40px;
+            height: 25px;
+        }
+        .order-summary .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+        .order-summary .summary-item span {
+            font-weight: bold;
+        }
+
+        .buy-now {
+        width: 50%;
+            padding: 0.75rem;
+            background-color: #1a202c;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            margin: 50px auto;
+            display: block;
+            width:20%;
+        }
+        .buy-now button:hover {
+            background-color: #1c3a8a;
+        }
+  </style>
+ </head>
+ <body>
+    <header>
+        <div class="logo">
+          <img src="images/image-removebg-preview (3).png" alt="logo" class="phoneFusion-logo" />
+        </div>
+  
+        <div class="navbar">
+          <a href="home.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="cart.html" class="nav-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+          </a>
+          <a href="login.html" class="nav-link">
+            <i class="fas fa-user"></i>
+            <span>Login</span>
+          </a>
+        </div>
+      </header>
+   </div>
+   <div class="content">
+    <div class="card">
+     <div class="title">
+      <span>
+       Delivery address
+      </span>
+      <span class="change">
+       Change
+      </span>
+     </div>
+     <p>
+      2, Matru Bangloj, Near Matru Bhumi
+      <br/>
+      And near ayothyanagar, New Maninagar, AHMEDABAD, GUJARAT 382449
+     </p>
+    </div>
+    <div class="card">
+     <span class="title">
+      Select a payment method
+     </span>
+     <div class="payment-methods">
+      <span>
+       Credit or debit card
+      </span>
+      <div>
+       <img alt="Visa logo" height="25" src="https://storage.googleapis.com/a1aa/image/Kin61v9JbQlyqCF8EQcwisCIvPJmIfYNDRLWEZQ1A-g.jpg" width="40"/>
+       <img alt="Mastercard logo" height="25" src="https://storage.googleapis.com/a1aa/image/tHykb3Na8Tc9dJtkgdIOHM0fYgpLXpq6HyqgYMwpsiE.jpg" width="40"/>
+       <img alt="RuPay logo" height="25" src="https://storage.googleapis.com/a1aa/image/pjahjP-0BR1zM34sjajZgDlbduRlP-x4Zq9NMwHxsD4.jpg" width="40"/>
+      </div>
+     </div>
+     <div class="payment-methods">
+      <span>
+       EMI
+      </span>
+     </div>
+     <div class="payment-methods">
+      <span>
+       Cash on Delivery/Pay on Delivery
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="card order-summary">
+    <span class="title">
+     Order summary
+    </span>
+    <div class="summary-item">
+     <span>
+      Items :
+     </span>
+     <span>
+      ₹96700.00
+     </span>
+    </div>
+    <div class="summary-item">
+     <span>
+      Delivery :
+     </span>
+     <span>
+      ₹30.00
+     </span>
+    </div>
+    <div class="summary-item">
+     <span>
+      Offer processing fee :
+     </span>
+     <span>
+      --
+     </span>
+    </div>
+    <div class="summary-item">
+     <span>
+      Total Price :
+     </span>
+     <span>
+      ₹96730.00
+     </span>
+    </div>
+   </div>
+  </div>
+  <button class="buy-now" type="button">buy now</button>
+ </body>
+</html>
